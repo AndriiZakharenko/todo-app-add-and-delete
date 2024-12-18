@@ -1,39 +1,35 @@
-# React Todo App Add and Delete
+# Todo App Add and Delete
 
-## Adding a todo
+### Description
 
-Add a todo with the entered title on the form submit:
+The task consists of 3 part:
+- [Load todos](https://github.com/AndriiZakharenko/todo-app-loading-todos)
+- [Add and Delete](https://github.com/AndriiZakharenko/todo-app-add-and-delete)
+- [Toggle and Rename](https://github.com/AndriiZakharenko/todo-app-with-api)
 
-- text field should be focused by default;
-- if the title is empty show the `Title should not be empty` notification at the bottom;
-- trim the title when checked or saved;
-- use your `userId` for the new todo;
-- send a POST request to the API (check the [API Documentation](https://mate-academy.github.io/fe-students-api/))
-- disable the input until receiving a response from the API;
-- immediately after sending a request create a todo with `id: 0` and save it to the `tempTodo` variable in the state (NOT to the `todos` array);
-- show an independent `TodoItem` **after** the list if `tempTodo` is not `null`;
-- temp TodoItem should have the loader (check the original markup);
-- in case of success add the todo created by the API to the array (take it from the POST response);
-- in case of an API error showing `Unable to add a todo` notification at the bottom;
-- set `tempTodo` to `null` to hide the extra `TodoItem`;
-- focus the text field after receiving a response;
-- clear the text in case of success;
-- keep the text in case of error;
+In this 2nd part:
 
-## Deleting todos
+- implemented adding and deleting todos using external API
 
-Remove a todo on the `TodoDeleteButton` click:
+### Stack
 
-- covered the todo with the loader while waiting for the API response;
-- remove the todo from the list on success;
-- in case of API error show `Unable to delete a todo` notification at the bottom (the todo must stay in the list);
+- HTML (BEM)
+- CSS (Bulma)
+- JS
+- Typescript
+- React
+- ReactDOM
+- Fetch
+- API ([Mate](https://mate-academy.github.io/fe-students-api/))
 
-Remove all the completed todos after the `Clear completed` button click:
+### Tools
 
-- the button should be enabled only if there is at least 1 completed todo;
-- the deletion should work as several individual deletions running at the same time;
-- in case of any error show error message but process success deletions;
+- ESlint
+- Prettier
+- Cypress
+- Mochawesome
+- Babel
 
-## Demo Links
+### Demo links
 
-- [DEMO LINK](https://AndriiZakharenko.github.io/react_todo-app-add-and-delete/)
+- [Demo](https://AndriiZakharenko.github.io/todo-app-add-and-delete/)
